@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trials Media Queries</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+      .box {
+        background: rgb(202, 129, 141);
+        padding: 1rem;
+      }
+
+      .box:nth-of-type(2) {
+        background: dodgerblue;
+      }
+
+      @media screen and (min-width: 700px) {
+        .container {
+          flex-direction: row;
+        }
+        body {
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+          numquam quae aliquam placeat autem nam quasi, quibusdam, iure
+          repudiandae magni culpa vero laudantium quod praesentium quos facilis
+          earum repellat sed?
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem,
+          quaerat? Provident vero beatae qui quisquam, sunt rem eum, tempora
+          aliquam nulla perspiciatis ad placeat sapiente repellat, temporibus ut
+          aspernatur animi.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
